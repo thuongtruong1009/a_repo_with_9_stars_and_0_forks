@@ -1,0 +1,12 @@
+name: "a_repo_with_x_stars_and_y_forks"
+description: "Rename this repo"
+inputs:
+  githubToken:
+    description: "Your Github Token"
+    required: true
+  actor:
+    description: "Actor name"
+outputs: {}
+runs:
+  using: "node12"
+  main: "index.js"
