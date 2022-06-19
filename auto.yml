@@ -1,5 +1,7 @@
-name: "a_repo_with_x_stars_and_y_forks"
-description: "Rename this repo"
+name: "Auto name"
+description: "Rename this repo with stars and forks number"
+icon: activity
+color: purple
 inputs:
   githubToken:
     description: "Your Github Token"
