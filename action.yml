@@ -1,7 +1,11 @@
-name: "Auto name"
+NAME: "Auto name"
 description: "Rename this repo with stars and forks number"
-icon: activity
-color: purple
+ICON: 'activity'
+COLOR: purple
+LABEL: 'GitHub'
+GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
+REPOSITORY: thuongtruong1009/a_repo_with_0_stars_and_0_forks
+ACTOR: thuongtruong1009
 inputs:
   githubToken:
     description: "Your Github Token"
