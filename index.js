@@ -28,7 +28,7 @@ async function run() {
             if (p[p.length - 1] == u || p[p.length - 2] == u) {
                 const e = `# ${i}` + "\n" + (p = p.slice(0, -2)).slice(1).join("\n");
                 await o.request("PUT /repos/{owner}/{repo}/contents/{path}", { owner: r, repo: s, path: "README.md", message: `⭐️ ${n}`, content: Buffer.from(e).toString("base64"), sha: m.data.sha, author: { name: t, email: `${t}@users.noreply.github.com` }, committer: { name: "Tran Nguyen Thuong Truong", email: "ititiu19228@student.hcmiu.edu.vn" } }), m = await o.request("GET /repos/{owner}/{repo}/contents/{path}", { owner: r, repo: s, path: "README.md" })
-            } else await o.request("PATCH /repos/{owner}/{repo}", { owner: r, repo: s, name: c, description: 'Automatic change repository name with stars and forks count' });
+            } else await o.request("PATCH /repos/{owner}/{repo}", { owner: r, repo: s, name: c, description: 'Automatic change repository name with stars and forks count after 60s' });
             const l = `# ${i}` + "\n" + p.slice(1).join("\n") + "\n" + u + "\n";
             await o.request("PUT /repos/{owner}/{repo}/contents/{path}", { owner: r, repo: s, path: "README.md", message: `chore: update README with ⭐️ ${n}`, content: Buffer.from(l).toString("base64"), sha: m.data.sha, author: { name: t, email: `${t}@users.noreply.github.com` }, committer: { name: "Tran Nguyen Thuong Truong", email: "ititiu19228@student.hcmiu.edu.vn" } })
         })
