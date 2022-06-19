@@ -58,4 +58,4 @@ const infor = [
     ## Generation details`
 ];
 
-export const getInfor = () => infor.forEach(item => item)
+module.exports = getInfor = () => infor.forEach(item => item)
