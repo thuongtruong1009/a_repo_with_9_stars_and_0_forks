@@ -1,4 +1,4 @@
-## Usage
+# a repo with 8 stars ⭐️ and 0 forks <br/>
 
 - Visit <a target="_blank" href="https://github.com/marketplace/actions/auto-name">Autoname on Maket place</a>
 - Click on `Use latest version` button
@@ -38,3 +38,5 @@
 - [jdgabriel](https://github.com/jdgabriel) helped me reach 6st stars and 0th forks.
 
 - [lotfimay](https://github.com/lotfimay) helped me reach 7st stars and 0th forks.
+
+- [thuongtruong1009](https://github.com/thuongtruong1009) helped me reach 8th stars and 0th forks.
