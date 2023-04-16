@@ -1,6 +1,5 @@
 const core = require("@actions/core"),
     github = require("@actions/github");
-    getInfor = require('./infor.js')
 
 function toOrd(e) {
     const t = ["th", "st", "nd", "rd"],
@@ -22,7 +21,7 @@ async function run() {
             a = a.concat(t.filter(e => e.name.includes("a_repo_with_")))
         }
         a.forEach(async({ full_name: e, stargazers_count: n, forks_count: a }) => {
-            const [r, s] = e.split("/"), c = `a_repo_with_${n}_stars_and_${a}_forks`, i = `a repo with ${n} stars ⭐️ and ${a} forks <br/> ${getInfor()}`, u = `- [${t}](https://github.com/${t}) helped me reach ${toOrd(n)} stars and ${toOrd(a)} forks.`;
+            const [r, s] = e.split("/"), c = `a_repo_with_${n}_stars_and_${a}_forks`, i = `a repo with ${n} stars ⭐️ and ${a} forks <br/>`, u = `- [${t}](https://github.com/${t}) helped me reach ${toOrd(n)} stars and ${toOrd(a)} forks.`;
             let m = await o.request("GET /repos/{owner}/{repo}/contents/{path}", { owner: r, repo: s, path: "README.md" }),
                 p = new Buffer(m.data.content, "base64").toString().split("\n");
             if (p[p.length - 1] == u || p[p.length - 2] == u) {

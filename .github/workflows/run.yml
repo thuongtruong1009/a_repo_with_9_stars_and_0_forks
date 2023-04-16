@@ -3,9 +3,7 @@ name: "Run"
 on:
   workflow_dispatch:
   watch:
-    types: [started,fork]
-  schedule:
-    - cron: "0 12 * * *"
+    types: [started, fork]
 
 jobs:
   run:
@@ -21,5 +19,5 @@ jobs:
       - run: npm i
       - uses: ./
         with:
-          githubToken: ${{ secrets.GITHUBTOKEN }}
+          githubToken: ${{ secrets.RUN_TOKEN }}
           actor: ${{ github.actor }}
