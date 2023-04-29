@@ -1,4 +1,4 @@
-# a repo with 10 stars ⭐️ and 0 forks <br/>
+# a repo with 11 stars ⭐️ and 0 forks <br/>
 
 - Visit <a target="_blank" href="https://github.com/marketplace/actions/auto-name">Autoname on Maket place</a>
 - Click on `Use latest version` button
@@ -46,3 +46,5 @@
 - [EuJinnLucaShow](https://github.com/EuJinnLucaShow) helped me reach 9th stars and 0th forks.
 
 - [EvanSvertoka](https://github.com/EvanSvertoka) helped me reach 10th stars and 0th forks.
+
+- [thisisjeffsnow](https://github.com/thisisjeffsnow) helped me reach 11th stars and 0th forks.
